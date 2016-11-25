@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A667F3ABD30AFEA82DD06519 /* Pods_kankan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15233227FD940070298127B0 /* Pods_kankan.framework */; };
+		BC39E2A21DE840A500DF06AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39E2A11DE840A500DF06AE /* AppDelegate.swift */; };
+		BC39E2A41DE840A500DF06AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39E2A31DE840A500DF06AE /* ViewController.swift */; };
+		BC39E2A71DE840A500DF06AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC39E2A51DE840A500DF06AE /* Main.storyboard */; };
+		BC39E2AA1DE840A500DF06AE /* kankan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC39E2A81DE840A500DF06AE /* kankan.xcdatamodeld */; };
+		BC39E2AC1DE840A500DF06AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC39E2AB1DE840A500DF06AE /* Assets.xcassets */; };
+		BC39E2AF1DE840A500DF06AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC39E2AD1DE840A500DF06AE /* LaunchScreen.storyboard */; };
+		BC39E2BA1DE840A600DF06AE /* kankanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39E2B91DE840A600DF06AE /* kankanTests.swift */; };
+		BC39E2C51DE840A600DF06AE /* kankanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39E2C41DE840A600DF06AE /* kankanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC39E2B61DE840A600DF06AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC39E2961DE840A500DF06AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC39E29D1DE840A500DF06AE;
+			remoteInfo = kankan;
+		};
+		BC39E2C11DE840A600DF06AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC39E2961DE840A500DF06AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC39E29D1DE840A500DF06AE;
+			remoteInfo = kankan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15233227FD940070298127B0 /* Pods_kankan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kankan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9F6E6266FC2B773F4A7750 /* Pods-kankan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kankan.release.xcconfig"; path = "Pods/Target Support Files/Pods-kankan/Pods-kankan.release.xcconfig"; sourceTree = "<group>"; };
+		BC39E29E1DE840A500DF06AE /* kankan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kankan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC39E2A11DE840A500DF06AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC39E2A31DE840A500DF06AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC39E2A61DE840A500DF06AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC39E2A91DE840A500DF06AE /* kankan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kankan.xcdatamodel; sourceTree = "<group>"; };
+		BC39E2AB1DE840A500DF06AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC39E2AE1DE840A500DF06AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC39E2B01DE840A500DF06AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC39E2B51DE840A600DF06AE /* kankanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kankanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC39E2B91DE840A600DF06AE /* kankanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kankanTests.swift; sourceTree = "<group>"; };
+		BC39E2BB1DE840A600DF06AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC39E2C01DE840A600DF06AE /* kankanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kankanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC39E2C41DE840A600DF06AE /* kankanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kankanUITests.swift; sourceTree = "<group>"; };
+		BC39E2C61DE840A600DF06AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38A9775AEDC1DBF17874B5D /* Pods-kankan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kankan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kankan/Pods-kankan.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC39E29B1DE840A500DF06AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A667F3ABD30AFEA82DD06519 /* Pods_kankan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC39E2B21DE840A600DF06AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC39E2BD1DE840A600DF06AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CF0B48CDCDD8F38E898AFC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D38A9775AEDC1DBF17874B5D /* Pods-kankan.debug.xcconfig */,
+				8F9F6E6266FC2B773F4A7750 /* Pods-kankan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C73F42A5DCE66D6C6D88A15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15233227FD940070298127B0 /* Pods_kankan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC39E2951DE840A500DF06AE = {
+			isa = PBXGroup;
+			children = (
+				BC39E2A01DE840A500DF06AE /* kankan */,
+				BC39E2B81DE840A600DF06AE /* kankanTests */,
+				BC39E2C31DE840A600DF06AE /* kankanUITests */,
+				BC39E29F1DE840A500DF06AE /* Products */,
+				2CF0B48CDCDD8F38E898AFC8 /* Pods */,
+				5C73F42A5DCE66D6C6D88A15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC39E29F1DE840A500DF06AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E29E1DE840A500DF06AE /* kankan.app */,
+				BC39E2B51DE840A600DF06AE /* kankanTests.xctest */,
+				BC39E2C01DE840A600DF06AE /* kankanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC39E2A01DE840A500DF06AE /* kankan */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2D21DE8424400DF06AE /* Class */,
+				BC39E2A11DE840A500DF06AE /* AppDelegate.swift */,
+				BC39E2A31DE840A500DF06AE /* ViewController.swift */,
+				BC39E2A51DE840A500DF06AE /* Main.storyboard */,
+				BC39E2AB1DE840A500DF06AE /* Assets.xcassets */,
+				BC39E2AD1DE840A500DF06AE /* LaunchScreen.storyboard */,
+				BC39E2B01DE840A500DF06AE /* Info.plist */,
+				BC39E2A81DE840A500DF06AE /* kankan.xcdatamodeld */,
+			);
+			path = kankan;
+			sourceTree = "<group>";
+		};
+		BC39E2B81DE840A600DF06AE /* kankanTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2B91DE840A600DF06AE /* kankanTests.swift */,
+				BC39E2BB1DE840A600DF06AE /* Info.plist */,
+			);
+			path = kankanTests;
+			sourceTree = "<group>";
+		};
+		BC39E2C31DE840A600DF06AE /* kankanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2C41DE840A600DF06AE /* kankanUITests.swift */,
+				BC39E2C61DE840A600DF06AE /* Info.plist */,
+			);
+			path = kankanUITests;
+			sourceTree = "<group>";
+		};
+		BC39E2D21DE8424400DF06AE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2D31DE8424400DF06AE /* Common */,
+				BC39E2D41DE8424400DF06AE /* CoreData */,
+				BC39E2D51DE8424400DF06AE /* Home */,
+				BC39E2D91DE8424400DF06AE /* Hot */,
+				BC39E2DD1DE8424400DF06AE /* Mine */,
+				BC39E2E11DE8424400DF06AE /* Resource */,
+				BC39E2E21DE8424400DF06AE /* Tools */,
+				BC39E2E31DE8424400DF06AE /* VIP */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		BC39E2D31DE8424400DF06AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC39E2D41DE8424400DF06AE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BC39E2D51DE8424400DF06AE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2D61DE8424400DF06AE /* Controller */,
+				BC39E2D71DE8424400DF06AE /* Model */,
+				BC39E2D81DE8424400DF06AE /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BC39E2D61DE8424400DF06AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC39E2D71DE8424400DF06AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC39E2D81DE8424400DF06AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC39E2D91DE8424400DF06AE /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2DA1DE8424400DF06AE /* Controller */,
+				BC39E2DB1DE8424400DF06AE /* Model */,
+				BC39E2DC1DE8424400DF06AE /* View */,
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		BC39E2DA1DE8424400DF06AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC39E2DB1DE8424400DF06AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC39E2DC1DE8424400DF06AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC39E2DD1DE8424400DF06AE /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2DE1DE8424400DF06AE /* Controller */,
+				BC39E2DF1DE8424400DF06AE /* Model */,
+				BC39E2E01DE8424400DF06AE /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		BC39E2DE1DE8424400DF06AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC39E2DF1DE8424400DF06AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC39E2E01DE8424400DF06AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC39E2E11DE8424400DF06AE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC39E2E21DE8424400DF06AE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BC39E2E31DE8424400DF06AE /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				BC39E2E41DE8424400DF06AE /* Controller */,
+				BC39E2E51DE8424400DF06AE /* Model */,
+				BC39E2E61DE8424400DF06AE /* View */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		BC39E2E41DE8424400DF06AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC39E2E51DE8424400DF06AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC39E2E61DE8424400DF06AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC39E29D1DE840A500DF06AE /* kankan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC39E2C91DE840A600DF06AE /* Build configuration list for PBXNativeTarget "kankan" */;
+			buildPhases = (
+				D3CC291D16A479A659D71E06 /* [CP] Check Pods Manifest.lock */,
+				BC39E29A1DE840A500DF06AE /* Sources */,
+				BC39E29B1DE840A500DF06AE /* Frameworks */,
+				BC39E29C1DE840A500DF06AE /* Resources */,
+				E31C49314B0E4CBE6C02A220 /* [CP] Embed Pods Frameworks */,
+				E6C94440D2CB6E4273550EB4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kankan;
+			productName = kankan;
+			productReference = BC39E29E1DE840A500DF06AE /* kankan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC39E2B41DE840A600DF06AE /* kankanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC39E2CC1DE840A600DF06AE /* Build configuration list for PBXNativeTarget "kankanTests" */;
+			buildPhases = (
+				BC39E2B11DE840A600DF06AE /* Sources */,
+				BC39E2B21DE840A600DF06AE /* Frameworks */,
+				BC39E2B31DE840A600DF06AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC39E2B71DE840A600DF06AE /* PBXTargetDependency */,
+			);
+			name = kankanTests;
+			productName = kankanTests;
+			productReference = BC39E2B51DE840A600DF06AE /* kankanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC39E2BF1DE840A600DF06AE /* kankanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC39E2CF1DE840A600DF06AE /* Build configuration list for PBXNativeTarget "kankanUITests" */;
+			buildPhases = (
+				BC39E2BC1DE840A600DF06AE /* Sources */,
+				BC39E2BD1DE840A600DF06AE /* Frameworks */,
+				BC39E2BE1DE840A600DF06AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC39E2C21DE840A600DF06AE /* PBXTargetDependency */,
+			);
+			name = kankanUITests;
+			productName = kankanUITests;
+			productReference = BC39E2C01DE840A600DF06AE /* kankanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC39E2961DE840A500DF06AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "王鑫";
+				TargetAttributes = {
+					BC39E29D1DE840A500DF06AE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BC39E2B41DE840A600DF06AE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BC39E29D1DE840A500DF06AE;
+					};
+					BC39E2BF1DE840A600DF06AE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BC39E29D1DE840A500DF06AE;
+					};
+				};
+			};
+			buildConfigurationList = BC39E2991DE840A500DF06AE /* Build configuration list for PBXProject "kankan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC39E2951DE840A500DF06AE;
+			productRefGroup = BC39E29F1DE840A500DF06AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC39E29D1DE840A500DF06AE /* kankan */,
+				BC39E2B41DE840A600DF06AE /* kankanTests */,
+				BC39E2BF1DE840A600DF06AE /* kankanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC39E29C1DE840A500DF06AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC39E2AF1DE840A500DF06AE /* LaunchScreen.storyboard in Resources */,
+				BC39E2AC1DE840A500DF06AE /* Assets.xcassets in Resources */,
+				BC39E2A71DE840A500DF06AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC39E2B31DE840A600DF06AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC39E2BE1DE840A600DF06AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3CC291D16A479A659D71E06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E31C49314B0E4CBE6C02A220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kankan/Pods-kankan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C94440D2CB6E4273550EB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kankan/Pods-kankan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC39E29A1DE840A500DF06AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC39E2A41DE840A500DF06AE /* ViewController.swift in Sources */,
+				BC39E2A21DE840A500DF06AE /* AppDelegate.swift in Sources */,
+				BC39E2AA1DE840A500DF06AE /* kankan.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC39E2B11DE840A600DF06AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC39E2BA1DE840A600DF06AE /* kankanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC39E2BC1DE840A600DF06AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC39E2C51DE840A600DF06AE /* kankanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC39E2B71DE840A600DF06AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC39E29D1DE840A500DF06AE /* kankan */;
+			targetProxy = BC39E2B61DE840A600DF06AE /* PBXContainerItemProxy */;
+		};
+		BC39E2C21DE840A600DF06AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC39E29D1DE840A500DF06AE /* kankan */;
+			targetProxy = BC39E2C11DE840A600DF06AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC39E2A51DE840A500DF06AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC39E2A61DE840A500DF06AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC39E2AD1DE840A500DF06AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC39E2AE1DE840A500DF06AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC39E2C71DE840A600DF06AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC39E2C81DE840A600DF06AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC39E2CA1DE840A600DF06AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38A9775AEDC1DBF17874B5D /* Pods-kankan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kankan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.kankan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC39E2CB1DE840A600DF06AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9F6E6266FC2B773F4A7750 /* Pods-kankan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kankan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.kankan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC39E2CD1DE840A600DF06AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kankanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.kankanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kankan.app/kankan";
+			};
+			name = Debug;
+		};
+		BC39E2CE1DE840A600DF06AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kankanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.kankanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kankan.app/kankan";
+			};
+			name = Release;
+		};
+		BC39E2D01DE840A600DF06AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kankanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.kankanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kankan;
+			};
+			name = Debug;
+		};
+		BC39E2D11DE840A600DF06AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kankanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.kankanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kankan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC39E2991DE840A500DF06AE /* Build configuration list for PBXProject "kankan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC39E2C71DE840A600DF06AE /* Debug */,
+				BC39E2C81DE840A600DF06AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC39E2C91DE840A600DF06AE /* Build configuration list for PBXNativeTarget "kankan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC39E2CA1DE840A600DF06AE /* Debug */,
+				BC39E2CB1DE840A600DF06AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC39E2CC1DE840A600DF06AE /* Build configuration list for PBXNativeTarget "kankanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC39E2CD1DE840A600DF06AE /* Debug */,
+				BC39E2CE1DE840A600DF06AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC39E2CF1DE840A600DF06AE /* Build configuration list for PBXNativeTarget "kankanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC39E2D01DE840A600DF06AE /* Debug */,
+				BC39E2D11DE840A600DF06AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC39E2A81DE840A500DF06AE /* kankan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC39E2A91DE840A500DF06AE /* kankan.xcdatamodel */,
+			);
+			currentVersion = BC39E2A91DE840A500DF06AE /* kankan.xcdatamodel */;
+			path = kankan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC39E2961DE840A500DF06AE /* Project object */;
+}
