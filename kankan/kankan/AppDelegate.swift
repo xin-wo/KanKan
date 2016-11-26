@@ -16,9 +16,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        createRoot()
+        print(NSHomeDirectory())
+        
         return true
     }
+    
+    
+    func createRoot(){
+        let tab = UITabBarController()
+        var viewControllers: [UIViewController] = []
+        let vcNames = ["kankan.HomeViewController", "kankan.HotViewController", "kankan.VIPViewController", "kankan.MineViewController"]
+        let imageNames = ["app_bottom_tab_recommend", "app_bottom_tab_hot", "app_bottom_tab_vip", "app_bottom_tab_user"]
+        for i in 0..<vcNames.count{
+            let vcClass = NSClassFromString(vcNames[i]) as! UIViewController.Type
+            let vc = vcClass.init()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.tabBarItem.image = UIImage(named: imageNames[i])
+            nav.tabBarItem.selectedImage = UIImage(named: imageNames[i]+"clicked")
+            nav.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+            
+            
+            viewControllers.append(nav)
+        }
+        tab.viewControllers = viewControllers
+        window?.rootViewController = tab
+    }
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

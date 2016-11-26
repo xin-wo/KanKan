@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="other" id="U6b-Vx-4bR" customClass="OtherReusableView" customModule="响巢看看" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1I-ki-Spi">
+                    <rect key="frame" x="10" y="5" width="0.0" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apn-S7-Owa">
+                    <rect key="frame" x="385" y="5" width="0.0" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f1I-ki-Spi" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="4sr-E5-rIF"/>
+                <constraint firstAttribute="bottom" secondItem="f1I-ki-Spi" secondAttribute="bottom" id="P7q-ZL-PPX"/>
+                <constraint firstAttribute="trailing" secondItem="apn-S7-Owa" secondAttribute="trailing" constant="12" id="Psy-KD-PVB"/>
+                <constraint firstAttribute="bottom" secondItem="apn-S7-Owa" secondAttribute="bottom" id="XVZ-eR-Rjf"/>
+                <constraint firstItem="f1I-ki-Spi" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="Z9w-Zv-Cqd"/>
+                <constraint firstItem="apn-S7-Owa" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="sod-TB-4LO"/>
+            </constraints>
+            <connections>
+                <outlet property="categoryLabel" destination="f1I-ki-Spi" id="bHs-RW-1vA"/>
+                <outlet property="moreLabel" destination="apn-S7-Owa" id="Jpv-Z3-byc"/>
+            </connections>
+            <point key="canvasLocation" x="400.5" y="280"/>
+        </collectionReusableView>
+    </objects>
+</document>
