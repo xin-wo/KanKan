@@ -2,8 +2,8 @@
 //  SKScNavViewController.swift
 //  SCNavController
 //
-//  Created by Sukun on 15/9/29.
-//  Copyright © 2015年 Sukun. All rights reserved.
+//  Created by Xin on 16/10/30.
+//  Copyright © 2016年 王鑫. All rights reserved.
 //
 
 import UIKit

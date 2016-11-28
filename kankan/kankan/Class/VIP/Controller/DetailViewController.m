@@ -1,9 +1,9 @@
 //
 //  DetailViewController.m
-//  WMVideoPlayer
+//  kankan
 //
-//  Created by 郑文明 on 16/2/1.
-//  Copyright © 2016年 郑文明. All rights reserved.
+//  Created by Xin on 16/11/20.
+//  Copyright © 2016年 王鑫. All rights reserved.
 //
 
 #import "DetailViewController.h"

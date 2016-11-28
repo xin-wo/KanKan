@@ -1,15 +1,10 @@
-/*!
- @header WMPlayer.m
- 
- @abstract  作者Github地址：https://github.com/zhengwenming
- 作者CSDN博客地址:http://blog.csdn.net/wenmingzheng
- 
- @author   Created by zhengwenming on  16/1/24
- 
- @version 2.0.0 16/1/24 Creation(版本信息)
- 
- Copyright © 2016年 郑文明. All rights reserved.
- */
+//
+//  WXPlayer.m
+//  kankan
+//
+//  Created by Xin on 16/11/20.
+//  Copyright © 2016年 王鑫. All rights reserved.
+//
 
 #import "WXPlayer.h"
 #define WXPlayerSrcName(file) [@"WXPlayer.bundle" stringByAppendingPathComponent:file]

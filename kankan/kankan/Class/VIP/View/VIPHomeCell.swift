@@ -1,8 +1,8 @@
 //
 //  VIPHomeCell.swift
-//  响巢看看
+//  kankan
 //
-//  Created by qianfeng on 16/10/26.
+//  Created by Xin on 16/10/26.
 //  Copyright © 2016年 王鑫. All rights reserved.
 //
 

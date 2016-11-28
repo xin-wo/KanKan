@@ -1,15 +1,10 @@
-/*!
- @header WMPlayer.h
- 
- @abstract  作者Github地址：https://github.com/zhengwenming
-            作者CSDN博客地址:http://blog.csdn.net/wenmingzheng
- 
- @author   Created by zhengwenming on  16/1/24
- 
- @version 1.00 16/1/24 Creation(版本信息)
- 
-   Copyright © 2016年 郑文明. All rights reserved.
- */
+//
+//  WXPlayer.h
+//  kankan
+//
+//  Created by Xin on 16/11/20.
+//  Copyright © 2016年 王鑫. All rights reserved.
+//
 
 #import <Masonry/Masonry.h>
 @import MediaPlayer;

@@ -524,6 +524,7 @@
 				BC39E2D51DE8424400DF06AE /* Home */,
 				BC39E2D91DE8424400DF06AE /* Hot */,
 				BC39E2E31DE8424400DF06AE /* VIP */,
+				BC39E2DD1DE8424400DF06AE /* Mine */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -659,8 +660,7 @@
 				BC39E2DF1DE8424400DF06AE /* Model */,
 				BC39E2E01DE8424400DF06AE /* View */,
 			);
-			name = Mine;
-			path = ../Mine;
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		BC39E2DE1DE8424400DF06AE /* Controller */ = {
@@ -703,11 +703,11 @@
 		BC39E2E21DE8424400DF06AE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				BC4D31FA1DE92F9400A2280B /* XCollectionViewLauMenu */,
 				BC4D31F11DE92F9400A2280B /* CollectionView+pageTitle */,
 				BC4D31F41DE92F9400A2280B /* WMPlayer */,
 				BC4D31F81DE92F9400A2280B /* WXNavigationProtocol.swift */,
 				BC4D31F91DE92F9400A2280B /* WXScrollView.swift */,
-				BC4D31FA1DE92F9400A2280B /* XCollectionViewLauMenu */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -715,7 +715,6 @@
 		BC39E2E31DE8424400DF06AE /* VIP */ = {
 			isa = PBXGroup;
 			children = (
-				BC39E2DD1DE8424400DF06AE /* Mine */,
 				BC39E2E41DE8424400DF06AE /* Controller */,
 				BC39E2E51DE8424400DF06AE /* Model */,
 				BC39E2E61DE8424400DF06AE /* View */,

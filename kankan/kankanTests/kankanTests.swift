@@ -2,7 +2,7 @@
 //  kankanTests.swift
 //  kankanTests
 //
-//  Created by qianfeng on 16/11/25.
+//  Created by Xin on 16/11/25.
 //  Copyright © 2016年 王鑫. All rights reserved.
 //
 

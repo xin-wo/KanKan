@@ -1,8 +1,8 @@
 //
 //  LoginViewController.swift
-//  响巢看看
+//  kankan
 //
-//  Created by qianfeng on 16/11/9.
+//  Created by Xin on 16/11/9.
 //  Copyright © 2016年 王鑫. All rights reserved.
 //
 
