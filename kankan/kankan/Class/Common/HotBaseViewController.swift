@@ -201,7 +201,7 @@ class HotBaseViewController: UIViewController,UIScrollViewDelegate,WXTableViewPr
                 self.wxPlayer.fullScreenBtn.selected = false
         }
     }
-    
+    //全屏显示·
     func toFullScreenWithInterfaceOrientation(orientation:UIDeviceOrientation) {
         statusBarHidenClosure(true)
         wxPlayer.removeFromSuperview()
