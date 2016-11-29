@@ -78,7 +78,7 @@ class HotBaseViewController: UIViewController,UIScrollViewDelegate,WXTableViewPr
         
         
     }
-    
+    //分享界面
     func configShareView() {
         blackBgView = UIView(frame: CGRect(x: 0, y: -100, width: screenWidth, height: screenHeight))
         blackBgView.backgroundColor = UIColor(white: 0.9, alpha: 0.8)
