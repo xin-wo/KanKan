@@ -356,7 +356,7 @@ protocol WXCollectionViewProtocol: NSObjectProtocol {
     func addRefresh(collecitonView: UICollectionView, header: (() -> ())?, footer: (() -> ())?)
 }
 
-
+//拓展WXCollectionViewProtocol
 extension WXCollectionViewProtocol where Self: UIViewController {
     func addRefresh(collecitonView: UICollectionView, header: (() -> ())?, footer: (() -> ())?) {
         
