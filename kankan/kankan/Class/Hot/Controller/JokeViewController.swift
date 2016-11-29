@@ -12,7 +12,7 @@ class JokeViewController: HotBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        url = HotJokeUrl
+        url = "VAP4BG6DL"
         configUI()
         loadData()
     }

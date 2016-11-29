@@ -267,7 +267,7 @@
 }
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidAppear:animated];
-    self.navigationController.navigationBarHidden = NO;
+//    self.navigationController.navigationBarHidden = NO;
     
 }
 #pragma mark

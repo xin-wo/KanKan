@@ -566,6 +566,7 @@
 		BC39E2D61DE8424400DF06AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BC4D32151DE930E600A2280B /* HomeViewController.swift */,
 				BC4D320B1DE930E600A2280B /* HistoryViewController.swift */,
 				BC4D320C1DE930E600A2280B /* HomeAnimViewController.swift */,
 				BC4D320D1DE930E600A2280B /* HomeChildViewController.swift */,
@@ -576,7 +577,6 @@
 				BC4D32121DE930E600A2280B /* HomeRecommendViewController.swift */,
 				BC4D32131DE930E600A2280B /* HomeTVViewController.swift */,
 				BC4D32141DE930E600A2280B /* HomeVarietyViewController.swift */,
-				BC4D32151DE930E600A2280B /* HomeViewController.swift */,
 				BC4D32161DE930E600A2280B /* HomeVMovieViewController.swift */,
 				BC4D32171DE930E600A2280B /* HomeWarViewController.swift */,
 				BC4D32181DE930E600A2280B /* HomeWuYeViewController.swift */,

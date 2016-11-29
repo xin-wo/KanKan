@@ -12,7 +12,7 @@ import Alamofire
 import Kingfisher
 
 
-class JumpViewController: UIViewController, WXCollectionViewProtocol {
+class JumpViewController: UIViewController, WXCollectionViewProtocol,WXNavigationProtocol {
     
 
     // collectionView 懒加载
@@ -58,6 +58,7 @@ class JumpViewController: UIViewController, WXCollectionViewProtocol {
         self.automaticallyAdjustsScrollViewInsets = false
 
         self.view.addSubview(collectionView)
+        addBarButton(imageName: "app_nav_back_normal", postion: .left, select: #selector(backAction))
         //下拉刷新
         addRefresh(collectionView, header: { [unowned self] in
             self.currentPage = 1
@@ -91,6 +92,12 @@ class JumpViewController: UIViewController, WXCollectionViewProtocol {
         }
         
     }
+    //返回上一个页面
+    func backAction() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    
     //跳转web页面
     func loadWeb(atIndaxPath indexPath: NSIndexPath) {
         

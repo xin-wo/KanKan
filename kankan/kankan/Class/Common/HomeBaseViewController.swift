@@ -82,6 +82,7 @@ class HomeBaseViewController: UIViewController, WXCollectionViewProtocol {
         }
     }
     
+    
     //加载首次请求数据
     func loadData() {
         
@@ -112,7 +113,7 @@ class HomeBaseViewController: UIViewController, WXCollectionViewProtocol {
         
     }
     
-    
+  
     
     //跳转到web页面
     func loadWeb(atIndaxPath indexPath: NSIndexPath) {
@@ -351,7 +352,6 @@ extension HomeBaseViewController: UICollectionViewDataSource, UICollectionViewDe
 
 //MARK: WXCollectionViewProtocol协议
 protocol WXCollectionViewProtocol: NSObjectProtocol {
-    //    var tableView: UITableView {get set}
     
     func addRefresh(collecitonView: UICollectionView, header: (() -> ())?, footer: (() -> ())?)
 }

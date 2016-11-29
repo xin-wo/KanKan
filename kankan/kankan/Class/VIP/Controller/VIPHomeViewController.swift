@@ -56,6 +56,11 @@ class VIPHomeViewController: UIViewController {
     //其余section数据
     var dataArray4: [VIPHomeModulesModel] = []
   
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()

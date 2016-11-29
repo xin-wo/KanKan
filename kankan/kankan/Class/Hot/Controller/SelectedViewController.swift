@@ -14,7 +14,7 @@ class SelectedViewController: HotBaseViewController {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIDeviceOrientationDidChangeNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(onDeviceOrientationChange), name: UIDeviceOrientationDidChangeNotification, object: nil)
-        url = HotSelectedUrl
+        url = "VAP4BFE3U"
         configUI()
         loadData()
     }

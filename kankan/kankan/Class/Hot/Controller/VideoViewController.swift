@@ -12,7 +12,7 @@ class VideoViewController: HotBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        url = HotSocialUrl
+        url = "VAP4BGTVD"
         configUI()
         loadData()
     }

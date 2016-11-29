@@ -14,9 +14,9 @@ import CoreData
 
 extension VideoEntity {
 
-    @NSManaged var img: String?
+    @NSManaged var cover: String?
     @NSManaged var title: String?
-    @NSManaged var videoid: NSNumber?
-    @NSManaged var playtimes: NSNumber?
-
+    @NSManaged var replyid: String?
+    @NSManaged var playCount: NSNumber?
+    @NSManaged var mp4_url: String?
 }

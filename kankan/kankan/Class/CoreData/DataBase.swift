@@ -15,18 +15,19 @@ class DataBase {
     var delegate: AppDelegate {
         return UIApplication.sharedApplication().delegate as! AppDelegate
     }
-    func insertWithModel(model: HotModel) {
+    func insertWithModel(model: PlayerModel) {
         let entity  = NSEntityDescription.insertNewObjectForEntityForName("VideoEntity", inManagedObjectContext: delegate.managedObjectContext) as! VideoEntity
-        entity.img = model.img
-        entity.playtimes = model.playtimes
+        entity.cover = model.cover
+        entity.playCount = model.playCount
         entity.title = model.title
-        entity.videoid = model.videoid
+        entity.replyid = model.replyid
+        entity.mp4_url = model.mp4_url
         
         delegate.saveContext()
         
     }
     
-    func selectEntity(videoid: NSNumber) -> VideoEntity? {
+    func selectEntity(replyid: String) -> VideoEntity? {
         let request = NSFetchRequest()
         //设置数据请求的实体结构,设置数据库中查找的表
         request.entity = NSEntityDescription.entityForName("VideoEntity", inManagedObjectContext: delegate.managedObjectContext)
@@ -34,7 +35,7 @@ class DataBase {
         //设置排序
         //        request.sortDescriptors = [NSSortDescriptor(key: , ascending: true)]
         //设置查询条件
-        request.predicate = NSPredicate(format: "videoid == %@", videoid)
+        request.predicate = NSPredicate(format: "replyid == %@", replyid)
         do {
             //查询操作,返回查询结果，是一个数组
             let objects = try delegate.managedObjectContext.executeFetchRequest(request)
@@ -50,7 +51,7 @@ class DataBase {
     }
     
     
-    func selectNum(num: Int) -> [HotModel]? {
+    func selectNum(num: Int) -> [PlayerModel]? {
         let request = NSFetchRequest()
         request.entity = NSEntityDescription.entityForName("VideoEntity", inManagedObjectContext: delegate.managedObjectContext)
         // 设置查询结果的最大数量
@@ -80,16 +81,16 @@ class DataBase {
         do {
             // 查询操作
             let objects = try delegate.managedObjectContext.executeFetchRequest(request) as! [VideoEntity]
-            var array: [HotModel] = []
+            var array: [PlayerModel] = []
             
             
             for App in objects {
-                let model = HotModel()
-                model.img = App.img
-                model.playtimes = App.playtimes
+                let model = PlayerModel()
+                model.cover = App.cover
+                model.playCount = App.playCount
                 model.title = App.title
-                model.videoid = App.videoid
-                
+                model.replyid = App.replyid
+                model.mp4_url = App.mp4_url
                 array.append(model)
             }
             return array
@@ -107,9 +108,9 @@ class DataBase {
     
     
     // 根据id删除数据
-    func deleteWithIDcard(ID videoid: NSNumber) {
+    func deleteWithIDcard(ID replyid: String) {
         // 拿到entity
-        let entity = self.selectEntity(videoid)
+        let entity = self.selectEntity(replyid)
         
         // 用managerContext去删除
         delegate.managedObjectContext.deleteObject(entity!)

@@ -43,7 +43,7 @@ class HistoryViewController: UIViewController,WXNavigationProtocol {
         }()
 
     
-    var dataArray = [HotModel]()
+    var dataArray = [PlayerModel]()
     
     var isEditting: Bool = false
     
@@ -99,7 +99,7 @@ extension HistoryViewController: UICollectionViewDelegateFlowLayout, UICollectio
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("historyCellId", forIndexPath: indexPath) as! HistoryCell
         let model = dataArray[indexPath.row]
-        cell.imageIcon.kf_setImageWithURL(NSURL(string: model.img), placeholderImage: UIImage(named: "default_poster_250_350"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
+        cell.imageIcon.kf_setImageWithURL(NSURL(string: model.cover), placeholderImage: UIImage(named: "default_poster_250_350"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
         cell.titleLabel.text = model.title
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(longPressAction(_:)))
@@ -109,8 +109,8 @@ extension HistoryViewController: UICollectionViewDelegateFlowLayout, UICollectio
     
         cell.deleteClosure = { [unowned self] in
             let indexpath = collectionView.indexPathForCell(cell)
-            let videoId = self.dataArray[indexpath!.row].videoid
-            DataBase.shareDataBase.deleteWithIDcard(ID: videoId)
+            let replyid = self.dataArray[indexpath!.row].replyid
+            DataBase.shareDataBase.deleteWithIDcard(ID: replyid)
             self.dataArray.removeAtIndex(indexpath!.row)
             collectionView.deleteItemsAtIndexPaths([indexpath!])
             
@@ -131,14 +131,12 @@ extension HistoryViewController: UICollectionViewDelegateFlowLayout, UICollectio
             return
         }
         let model = dataArray[indexPath.row]
-        let tmpVideoId = "\(model.videoid)"
-        let str = tmpVideoId.substringToIndex(tmpVideoId.startIndex.advancedBy(3))
-        let webVC = WebViewController()
-        webVC.urlString = "http://vod.kankan.com/v/"+str+"/"+tmpVideoId+".shtml"
-        print(webVC.urlString)
-        webVC.hidesBottomBarWhenPushed = true
+        let detailVC = DetailViewController()
+        detailVC.URLString = model.mp4_url
         
-        navigationController?.pushViewController(webVC, animated: true)
+        detailVC.hidesBottomBarWhenPushed = true
+        
+        navigationController?.pushViewController(detailVC, animated: true)
         
     }
     func longPressAction(longPress: UIGestureRecognizer) {

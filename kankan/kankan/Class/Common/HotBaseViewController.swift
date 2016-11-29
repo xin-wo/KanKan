@@ -13,12 +13,12 @@ import MJRefresh
 import SnapKit
 
 
-class HotBaseViewController: UIViewController,UIScrollViewDelegate {
+class HotBaseViewController: UIViewController,UIScrollViewDelegate,WXTableViewProtocol {
 
     
     var url = ""
     var hotTableView: UITableView!
-    var dataArray: [HotModel] = []
+    var dataArray: [PlayerModel] = []
     var shareTableView: UITableView!
     var shareView: UIView!
     var blackBgView: UIView!
@@ -35,8 +35,6 @@ class HotBaseViewController: UIViewController,UIScrollViewDelegate {
         
     }
   
-
-    
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
         self.releaseWXPlayer()
@@ -62,15 +60,15 @@ class HotBaseViewController: UIViewController,UIScrollViewDelegate {
         hotTableView.contentMode = .ScaleAspectFill
         
         self.view.addSubview(hotTableView)
-        
+      
     }
     
     func loadData() {
-        Alamofire.request(.GET, url).responseJSON { [unowned self] (response) in
+        Alamofire.request(.GET, String(format: "http://c.3g.163.com/nc/video/list/%@/y/0-10.html", url)).responseJSON { [unowned self] (response) in
             if response.result.error == nil {
-                let array = (response.result.value as! NSDictionary)["video_list"]! as! [AnyObject]
+                let array = (response.result.value as! NSDictionary)[self.url]! as! [AnyObject]
                 for dic in array {
-                    let model = HotModel()
+                    let model = PlayerModel()
                     model.setValuesForKeysWithDictionary(dic as! [String : AnyObject])
                     self.dataArray.append(model)
                 }
@@ -218,7 +216,6 @@ class HotBaseViewController: UIViewController,UIScrollViewDelegate {
         
         wxPlayer.frame = CGRectMake(0, 0, screenWidth, screenHeight)
         wxPlayer.playerLayer.frame = CGRectMake(0, 0, screenHeight, screenWidth)
-        wxPlayer.titleLabel.text = "超人大战蝙蝠侠"
         wxPlayer.bottomView.snp_remakeConstraints { (make) in
             make.height.equalTo(40);
             make.top.equalTo(screenWidth-40);
@@ -287,31 +284,26 @@ class HotBaseViewController: UIViewController,UIScrollViewDelegate {
     func startPlayVideo(btn: UIButton) {
         let model = dataArray[btn.tag]
         
-        if DataBase.shareDataBase.selectEntity(model.videoid) == nil {
+        if DataBase.shareDataBase.selectEntity(model.replyid) == nil {
             DataBase.shareDataBase.insertWithModel(model)
         }
 
         currentIndexPath = NSIndexPath(forRow: btn.tag, inSection: 0)
         self.currentCell = (btn.superview?.superview as? HotCell)!
         currentCell.playBtn.selected = true
-      
+        
         if (wxPlayer != nil) {
             releaseWXPlayer()
             wxPlayer = WXPlayer(frame: self.currentCell.imageIcon.bounds)
             wxPlayer.delegate = self
-            wxPlayer.URLString = "http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4"
+            wxPlayer.URLString = model.mp4_url
+            wxPlayer.titleLabel.text = model.title
   
         } else {
             wxPlayer = WXPlayer(frame: self.currentCell.imageIcon.bounds)
             wxPlayer.delegate = self
-//            wxPlayer.toSwiftFullBlock = { [unowned self] (btn) in
-//                self.clickedFullScreenButton(self.wxPlayer, fullScreenBtn: btn)
-//            }
-//            wxPlayer.toSwiftCloseBlock = { [unowned self] (btn) in
-//                self.clickedCloseButton(btn)
-//                
-//            }
-            wxPlayer.URLString = "http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4"
+            wxPlayer.URLString = model.mp4_url
+            wxPlayer.titleLabel.text = model.title
         }
         self.currentCell.imageIcon.addSubview(wxPlayer)
         self.currentCell.imageIcon.bringSubviewToFront(wxPlayer)
@@ -373,9 +365,9 @@ extension HotBaseViewController: UITableViewDelegate, UITableViewDataSource,WXPl
             
             let  model = dataArray[indexPath.row]
            
-            cell.imageIcon.kf_setImageWithURL(NSURL(string: model.img), placeholderImage: UIImage(named: "default_poster_480_270"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
+            cell.imageIcon.kf_setImageWithURL(NSURL(string: model.cover), placeholderImage: UIImage(named: "default_poster_480_270"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
             
-            cell.playtimesLabel.text = "\(model.playtimes)人看过"
+            cell.playtimesLabel.text = "\(model.playCount)人看过"
             cell.titleLabel.text = model.title
             cell.selectionStyle = .None
             cell.agreeBt.selected = model.agreeFlag
@@ -449,21 +441,8 @@ extension HotBaseViewController: UITableViewDelegate, UITableViewDataSource,WXPl
    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if tableView == hotTableView {
-            let model = dataArray[indexPath.row]
             
-            if DataBase.shareDataBase.selectEntity(model.videoid) == nil {
-                DataBase.shareDataBase.insertWithModel(model)
-            }
 
-            let tmpVideoId = "\(model.videoid)"
-            let str = tmpVideoId.substringToIndex(tmpVideoId.startIndex.advancedBy(3))
-            
-            let webVC = WebViewController()
-            webVC.urlString = "http://vod.kankan.com/v/"+str+"/"+tmpVideoId+".shtml"
-            print(webVC.urlString)
-            webVC.hidesBottomBarWhenPushed = true
-            
-//            navigationController?.pushViewController(webVC, animated: true)
         } else if tableView == shareTableView {
             if indexPath.row == 0 {
                 print("已分享到微信！")
@@ -511,25 +490,6 @@ extension HotBaseViewController: UITableViewDelegate, UITableViewDataSource,WXPl
       
     }
     
-//    func clickedCloseButton(closeBtn: UIButton) {
-//        currentCell = (self.hotTableView.cellForRowAtIndexPath(NSIndexPath(forRow: currentIndexPath.row, inSection: 0)) as? HotCell)!
-//        currentCell.playBtn.superview?.bringSubviewToFront(currentCell.playBtn)
-//        self.releaseWXPlayer()
-//        self.setNeedsStatusBarAppearanceUpdate()
-//       
-//    }
-//
-//    func clickedFullScreenButton(wxPlayer:WXPlayer, fullScreenBtn: UIButton) {
-//        
-//        if fullScreenBtn.selected {
-//            wxPlayer.isFullscreen = true
-//            self.setNeedsStatusBarAppearanceUpdate()
-//            self.toFullScreenWithInterfaceOrientation(.LandscapeLeft)
-//        } else {
-//            self.toCell()
-//        }
-//        
-//    }
 
     func wxplayer(wxplayer: WXPlayer!, clickedCloseButton closeBtn: UIButton!) {
         statusBarHidenClosure(false)
@@ -559,6 +519,26 @@ extension HotBaseViewController: UITableViewDelegate, UITableViewDataSource,WXPl
     }
 }
 
+//MARK: WXCollectionViewProtocol协议
+protocol WXTableViewProtocol: NSObjectProtocol {
+    
+    func addRefresh(tableView: UITableView, header: (() -> ())?, footer: (() -> ())?)
+}
+
+
+extension WXTableViewProtocol where Self: UIViewController {
+    func addRefresh(tableView: UITableView, header: (() -> ())?, footer: (() -> ())?) {
+        
+        if header != nil {
+            tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: header)
+        }
+        
+        if footer != nil {
+            tableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: footer)
+        }
+    }
+    
+}
 
 
 

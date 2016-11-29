@@ -58,7 +58,10 @@ class HomeRecommendViewController: UIViewController {
     //轮滑页图片标题
     var subTitleArray: [String] = []
     
-    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -298,6 +301,11 @@ extension HomeRecommendViewController: UICollectionViewDataSource, UICollectionV
 
     //跳转页面
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let VC = DetailViewController()
+        VC.URLString = "http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4"
+        VC.title = "蝙蝠侠大战超人"
+        VC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(VC, animated: true)
 
     }
 }

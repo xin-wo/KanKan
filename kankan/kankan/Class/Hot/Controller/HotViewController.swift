@@ -12,7 +12,7 @@ class HotViewController: UIViewController, WXNavigationProtocol,PageTitleViewDel
    
     //索引栏视图
     lazy var titleView: PageTitleView = {
-        let titleView = PageTitleView(frame: CGRect(x: 0, y: 64, width: screenWidth, height: 40), titiles: ["精选", "美女", "搞笑", "社会"])
+        let titleView = PageTitleView(frame: CGRect(x: 0, y: 64, width: screenWidth, height: 40), titiles: ["奇葩", "萌物", "美女", "精品"])
         
         return titleView
     }()

@@ -12,7 +12,7 @@ class BeautyViewController: HotBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        url = HotBeautyUrl
+        url = "VAP4BFR16"
         configUI()
         loadData()
     }

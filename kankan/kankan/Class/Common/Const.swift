@@ -13,6 +13,13 @@ import UIKit
 let screenWidth = UIScreen.mainScreen().bounds.width
 let screenHeight = UIScreen.mainScreen().bounds.height
 
+let playerUrl = "http://c.m.163.com/nc/video/home/0-10.html"
+let firstPlayerUrl = "http://c.3g.163.com/nc/video/list/VAP4BFE3U/y/0-10.html"
+let secondPlayerUrl = "http://c.3g.163.com/nc/video/list/VAP4BFR16/y/0-10.html"
+let thirdPlayreUrl = "http://c.3g.163.com/nc/video/list/VAP4BG6DL/y/0-10.html"
+let fourthPlayerUrl = "http://c.3g.163.com/nc/video/list/VAP4BGTVD/y/0-10.html"
+
+
 
 
 //HomeUrl
