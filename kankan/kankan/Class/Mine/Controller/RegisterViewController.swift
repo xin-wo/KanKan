@@ -9,7 +9,7 @@
 import UIKit
 import MobileCoreServices
 
-
+//登录视图控制器
 class SigninViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate, WXNavigationProtocol {
     
     var signinView: RegisterView!
