@@ -13,6 +13,10 @@ class MineViewController: UIViewController, WXNavigationProtocol {
     var tableView: UITableView!
     //所有cell的名称
     var cellNames = ["开通看看会员", "", "追剧", "收藏", "购买记录", "扫一扫", "远程设备管理", "设置", "反馈"]
+    var desText = "登入后支持云同步及访问更多特权"
+    var titleText = "点击登录"
+    var userImage = UIImage(named: "default_poster_250_350")
+    
     
     
     override func viewDidLoad() {
@@ -35,9 +39,12 @@ class MineViewController: UIViewController, WXNavigationProtocol {
         
         addTitle("个人中心")
         addBottomImage()
+        addBarButton(imageName: "app_nav_back_normal", bgImageName: "app_nav_back_clicked", postion: .left, select: #selector(backAction))
     
     }
-   
+    func backAction() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     
     
 }
@@ -50,9 +57,9 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier("firstMine", forIndexPath: indexPath) as! MineTableViewCell
-            cell.descLabel.text = "登入后支持云同步及访问更多特权"
-            cell.titleLabel.text = "点击登录"
-            cell.userImage.image = UIImage(named: "zxc")
+            cell.descLabel.text = desText
+            cell.titleLabel.text = titleText
+            cell.userImage.image = userImage
             cell.accessoryType = .DisclosureIndicator
             
             return cell
@@ -89,10 +96,8 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 0 {
            
             let LVC = PassViewController()
-            
             LVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(LVC, animated: true)
-            
             
         } else if indexPath.row == 2 {
             let vc = HistoryViewController()

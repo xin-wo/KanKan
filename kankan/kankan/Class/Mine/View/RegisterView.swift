@@ -1,39 +1,36 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  kankan
 //
-//  Created by Xin on 16/11/9.
+//  Created by qianfeng on 16/11/30.
 //  Copyright © 2016年 王鑫. All rights reserved.
 //
 
 import UIKit
 
-class LoginView: UIView {
+class RegisterView: UIView {
     var closure: ((String, String) -> (Void))!
-    
-    
-    @IBOutlet weak var LoginBtn: UIButton!
-    
-    
+   
     @IBOutlet weak var userNameField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
     
     
-    @IBAction func loginAction(sender: UIButton) {
-        
+    @IBOutlet weak var userImage: UIImageView!
+    
+    
+    
+    @IBAction func registerAction(sender: AnyObject) {
         if userNameField.text == "" || passwordField.text == "" {
             closure("","")
             
-            
-            
         } else {
+            
             closure(userNameField.text!,passwordField.text!)
         }
+
         
-    
     }
-   
     
     
 }

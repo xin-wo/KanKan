@@ -19,7 +19,8 @@ class OtherTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.smallImage.layer.cornerRadius = 15
+        self.smallImage.layer.masksToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

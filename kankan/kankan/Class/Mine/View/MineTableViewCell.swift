@@ -23,6 +23,8 @@ class MineTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.userImage.layer.cornerRadius = 30
+        self.userImage.layer.masksToBounds = true
         
     }
 

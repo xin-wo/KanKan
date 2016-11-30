@@ -24,11 +24,15 @@
                         <rect key="frame" x="10" y="10" width="30" height="23"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="1c3-kZ-fmf"/>
+                            <constraint firstAttribute="height" constant="30" id="9Z6-7U-cpG"/>
                             <constraint firstAttribute="width" constant="30" id="Ft2-lV-BMJ"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="lmJ-hf-Jcs"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="1c3-kZ-fmf"/>
+                                <exclude reference="9Z6-7U-cpG"/>
+                                <exclude reference="lmJ-hf-Jcs"/>
                             </mask>
                         </variation>
                     </imageView>
@@ -38,9 +42,15 @@
                     <constraint firstAttribute="trailing" secondItem="b12-nf-8iH" secondAttribute="trailing" constant="10" id="BX9-yX-I0E"/>
                     <constraint firstItem="wEK-eo-BCk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="H8a-Cg-yDh"/>
                     <constraint firstAttribute="bottom" secondItem="wEK-eo-BCk" secondAttribute="bottom" constant="10" id="Ogz-pg-inr"/>
+                    <constraint firstItem="b12-nf-8iH" firstAttribute="centerY" secondItem="wEK-eo-BCk" secondAttribute="centerY" id="Rl2-rs-RZe"/>
                     <constraint firstItem="b12-nf-8iH" firstAttribute="centerY" secondItem="wEK-eo-BCk" secondAttribute="centerY" id="Tyz-gK-st2"/>
                     <constraint firstItem="b12-nf-8iH" firstAttribute="leading" secondItem="wEK-eo-BCk" secondAttribute="trailing" constant="10" id="iQn-0Q-1Ak"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Tyz-gK-st2"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="itemLabel" destination="b12-nf-8iH" id="X4b-1J-XtD"/>

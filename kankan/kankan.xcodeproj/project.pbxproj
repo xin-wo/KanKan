@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A667F3ABD30AFEA82DD06519 /* Pods_kankan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15233227FD940070298127B0 /* Pods_kankan.framework */; };
+		BC0651AD1DEE83CE007D9B71 /* OtherReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0651AB1DEE83CE007D9B71 /* OtherReusableView.swift */; };
+		BC0651AE1DEE83CE007D9B71 /* OtherReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0651AC1DEE83CE007D9B71 /* OtherReusableView.xib */; };
+		BC0651B01DEE83D8007D9B71 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0651AF1DEE83D8007D9B71 /* HistoryViewController.swift */; };
+		BC0651B31DEE83E0007D9B71 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0651B11DEE83E0007D9B71 /* OtherTableViewCell.swift */; };
+		BC0651B41DEE83E0007D9B71 /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0651B21DEE83E0007D9B71 /* OtherTableViewCell.xib */; };
+		BC0652041DEEBF63007D9B71 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0652031DEEBF63007D9B71 /* RegisterViewController.swift */; };
 		BC39E2A21DE840A500DF06AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39E2A11DE840A500DF06AE /* AppDelegate.swift */; };
 		BC39E2A41DE840A500DF06AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39E2A31DE840A500DF06AE /* ViewController.swift */; };
 		BC39E2A71DE840A500DF06AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC39E2A51DE840A500DF06AE /* Main.storyboard */; };
@@ -126,7 +132,6 @@
 		BC4D32081DE92F9400A2280B /* XMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D31FD1DE92F9400A2280B /* XMacros.swift */; };
 		BC4D32091DE92F9400A2280B /* XScNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D31FE1DE92F9400A2280B /* XScNavBar.swift */; };
 		BC4D320A1DE92F9400A2280B /* XScNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D31FF1DE92F9400A2280B /* XScNavViewController.swift */; };
-		BC4D321A1DE930E600A2280B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D320B1DE930E600A2280B /* HistoryViewController.swift */; };
 		BC4D321B1DE930E600A2280B /* HomeAnimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D320C1DE930E600A2280B /* HomeAnimViewController.swift */; };
 		BC4D321C1DE930E600A2280B /* HomeChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D320D1DE930E600A2280B /* HomeChildViewController.swift */; };
 		BC4D321D1DE930E600A2280B /* HomeDocuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D320E1DE930E600A2280B /* HomeDocuViewController.swift */; };
@@ -151,8 +156,6 @@
 		BC4D323C1DE930F900A2280B /* HomeBaseReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4D32311DE930F900A2280B /* HomeBaseReusableView.xib */; };
 		BC4D323D1DE930F900A2280B /* NormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32321DE930F900A2280B /* NormalCell.swift */; };
 		BC4D323E1DE930F900A2280B /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4D32331DE930F900A2280B /* NormalCell.xib */; };
-		BC4D323F1DE930F900A2280B /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32341DE930F900A2280B /* OtherTableViewCell.swift */; };
-		BC4D32401DE930F900A2280B /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4D32351DE930F900A2280B /* OtherTableViewCell.xib */; };
 		BC4D32471DE9310400A2280B /* BeautyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32411DE9310400A2280B /* BeautyViewController.swift */; };
 		BC4D32481DE9310400A2280B /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32421DE9310400A2280B /* CommentViewController.swift */; };
 		BC4D32491DE9310400A2280B /* HotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32431DE9310400A2280B /* HotViewController.swift */; };
@@ -170,8 +173,6 @@
 		BC4D32621DE9312E00A2280B /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4D325C1DE9312E00A2280B /* LoginView.xib */; };
 		BC4D32631DE9312E00A2280B /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D325D1DE9312E00A2280B /* MineTableViewCell.swift */; };
 		BC4D32641DE9312E00A2280B /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4D325E1DE9312E00A2280B /* MineTableViewCell.xib */; };
-		BC4D32651DE9312E00A2280B /* OtherReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D325F1DE9312E00A2280B /* OtherReusableView.swift */; };
-		BC4D32661DE9312E00A2280B /* OtherReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4D32601DE9312E00A2280B /* OtherReusableView.xib */; };
 		BC4D327B1DE9313700A2280B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32681DE9313700A2280B /* DetailViewController.m */; };
 		BC4D327C1DE9313700A2280B /* VIPActViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32691DE9313700A2280B /* VIPActViewController.swift */; };
 		BC4D327D1DE9313700A2280B /* VIPAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D326A1DE9313700A2280B /* VIPAllViewController.swift */; };
@@ -195,6 +196,8 @@
 		BC4D32921DE9314500A2280B /* VIPHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32901DE9314500A2280B /* VIPHomeCell.swift */; };
 		BC4D32931DE9314500A2280B /* VIPHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4D32911DE9314500A2280B /* VIPHomeCell.xib */; };
 		BC4D32981DE932A800A2280B /* HotBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D32971DE932A800A2280B /* HotBaseViewController.swift */; };
+		BCF6E0B51DEEC7DC008AB4F0 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF6E0B41DEEC7DC008AB4F0 /* RegisterView.xib */; };
+		BCF6E0B71DEEC7FD008AB4F0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF6E0B61DEEC7FD008AB4F0 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +220,12 @@
 /* Begin PBXFileReference section */
 		15233227FD940070298127B0 /* Pods_kankan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kankan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F6E6266FC2B773F4A7750 /* Pods-kankan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kankan.release.xcconfig"; path = "Pods/Target Support Files/Pods-kankan/Pods-kankan.release.xcconfig"; sourceTree = "<group>"; };
+		BC0651AB1DEE83CE007D9B71 /* OtherReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherReusableView.swift; sourceTree = "<group>"; };
+		BC0651AC1DEE83CE007D9B71 /* OtherReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherReusableView.xib; sourceTree = "<group>"; };
+		BC0651AF1DEE83D8007D9B71 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		BC0651B11DEE83E0007D9B71 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
+		BC0651B21DEE83E0007D9B71 /* OtherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
+		BC0652031DEEBF63007D9B71 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		BC39E29E1DE840A500DF06AE /* kankan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kankan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC39E2A11DE840A500DF06AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC39E2A31DE840A500DF06AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -342,7 +351,6 @@
 		BC4D31FD1DE92F9400A2280B /* XMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMacros.swift; sourceTree = "<group>"; };
 		BC4D31FE1DE92F9400A2280B /* XScNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XScNavBar.swift; sourceTree = "<group>"; };
 		BC4D31FF1DE92F9400A2280B /* XScNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XScNavViewController.swift; sourceTree = "<group>"; };
-		BC4D320B1DE930E600A2280B /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../../Home/Controller/HistoryViewController.swift; sourceTree = "<group>"; };
 		BC4D320C1DE930E600A2280B /* HomeAnimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAnimViewController.swift; sourceTree = "<group>"; };
 		BC4D320D1DE930E600A2280B /* HomeChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeChildViewController.swift; sourceTree = "<group>"; };
 		BC4D320E1DE930E600A2280B /* HomeDocuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDocuViewController.swift; sourceTree = "<group>"; };
@@ -367,8 +375,6 @@
 		BC4D32311DE930F900A2280B /* HomeBaseReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeBaseReusableView.xib; sourceTree = "<group>"; };
 		BC4D32321DE930F900A2280B /* NormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalCell.swift; sourceTree = "<group>"; };
 		BC4D32331DE930F900A2280B /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
-		BC4D32341DE930F900A2280B /* OtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherTableViewCell.swift; path = ../../Home/View/OtherTableViewCell.swift; sourceTree = "<group>"; };
-		BC4D32351DE930F900A2280B /* OtherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OtherTableViewCell.xib; path = ../../Home/View/OtherTableViewCell.xib; sourceTree = "<group>"; };
 		BC4D32411DE9310400A2280B /* BeautyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyViewController.swift; sourceTree = "<group>"; };
 		BC4D32421DE9310400A2280B /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		BC4D32431DE9310400A2280B /* HotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotViewController.swift; sourceTree = "<group>"; };
@@ -386,8 +392,6 @@
 		BC4D325C1DE9312E00A2280B /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BC4D325D1DE9312E00A2280B /* MineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		BC4D325E1DE9312E00A2280B /* MineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
-		BC4D325F1DE9312E00A2280B /* OtherReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherReusableView.swift; path = ../../Mine/View/OtherReusableView.swift; sourceTree = "<group>"; };
-		BC4D32601DE9312E00A2280B /* OtherReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OtherReusableView.xib; path = ../../Mine/View/OtherReusableView.xib; sourceTree = "<group>"; };
 		BC4D32671DE9313700A2280B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		BC4D32681DE9313700A2280B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		BC4D32691DE9313700A2280B /* VIPActViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPActViewController.swift; sourceTree = "<group>"; };
@@ -413,6 +417,8 @@
 		BC4D32911DE9314500A2280B /* VIPHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VIPHomeCell.xib; sourceTree = "<group>"; };
 		BC4D32971DE932A800A2280B /* HotBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotBaseViewController.swift; sourceTree = "<group>"; };
 		BC4D329C1DE9334E00A2280B /* kankan-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kankan-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCF6E0B41DEEC7DC008AB4F0 /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		BCF6E0B61DEEC7FD008AB4F0 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D38A9775AEDC1DBF17874B5D /* Pods-kankan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kankan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kankan/Pods-kankan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -595,6 +601,8 @@
 		BC39E2D81DE8424400DF06AE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BC0651AB1DEE83CE007D9B71 /* OtherReusableView.swift */,
+				BC0651AC1DEE83CE007D9B71 /* OtherReusableView.xib */,
 				BC4D322B1DE930F900A2280B /* FooterReusableView.swift */,
 				BC4D322C1DE930F900A2280B /* FooterReusableView.xib */,
 				BC4D322D1DE930F900A2280B /* HeaderReusableView.swift */,
@@ -604,8 +612,6 @@
 				BC4D32311DE930F900A2280B /* HomeBaseReusableView.xib */,
 				BC4D32321DE930F900A2280B /* NormalCell.swift */,
 				BC4D32331DE930F900A2280B /* NormalCell.xib */,
-				BC4D325F1DE9312E00A2280B /* OtherReusableView.swift */,
-				BC4D32601DE9312E00A2280B /* OtherReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -665,9 +671,10 @@
 		BC39E2DE1DE8424400DF06AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BC4D320B1DE930E600A2280B /* HistoryViewController.swift */,
-				BC4D32571DE9311E00A2280B /* LoginViewController.swift */,
+				BC0651AF1DEE83D8007D9B71 /* HistoryViewController.swift */,
 				BC4D32581DE9311E00A2280B /* MineViewController.swift */,
+				BC4D32571DE9311E00A2280B /* LoginViewController.swift */,
+				BC0652031DEEBF63007D9B71 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -682,10 +689,12 @@
 		BC39E2E01DE8424400DF06AE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BC4D32341DE930F900A2280B /* OtherTableViewCell.swift */,
-				BC4D32351DE930F900A2280B /* OtherTableViewCell.xib */,
+				BC0651B11DEE83E0007D9B71 /* OtherTableViewCell.swift */,
+				BC0651B21DEE83E0007D9B71 /* OtherTableViewCell.xib */,
 				BC4D325B1DE9312E00A2280B /* LoginView.swift */,
 				BC4D325C1DE9312E00A2280B /* LoginView.xib */,
+				BCF6E0B61DEEC7FD008AB4F0 /* RegisterView.swift */,
+				BCF6E0B41DEEC7DC008AB4F0 /* RegisterView.xib */,
 				BC4D325D1DE9312E00A2280B /* MineTableViewCell.swift */,
 				BC4D325E1DE9312E00A2280B /* MineTableViewCell.xib */,
 			);
@@ -1015,7 +1024,6 @@
 				BC39E3761DE8432F00DF06AE /* app_no_network@3x.png in Resources */,
 				BC39E3971DE8432F00DF06AE /* icon_sina@3x.png in Resources */,
 				BC4D32931DE9314500A2280B /* VIPHomeCell.xib in Resources */,
-				BC4D32401DE930F900A2280B /* OtherTableViewCell.xib in Resources */,
 				BC4D32371DE930F900A2280B /* FooterReusableView.xib in Resources */,
 				BC4D323C1DE930F900A2280B /* HomeBaseReusableView.xib in Resources */,
 				BC39E38C1DE8432F00DF06AE /* agree_p@2x.png in Resources */,
@@ -1046,8 +1054,9 @@
 				BC39E3881DE8432F00DF06AE /* default_poster_480_270@3x.png in Resources */,
 				BC39E3941DE8432F00DF06AE /* icon_qq@2x.png in Resources */,
 				BC39E3E21DE8444000DF06AE /* arrow@3x.png in Resources */,
+				BCF6E0B51DEEC7DC008AB4F0 /* RegisterView.xib in Resources */,
 				BC39E3521DE8432F00DF06AE /* app_bottom_tab_hot_clicked@3x.png in Resources */,
-				BC4D32661DE9312E00A2280B /* OtherReusableView.xib in Resources */,
+				BC0651AE1DEE83CE007D9B71 /* OtherReusableView.xib in Resources */,
 				BC4D32021DE92F9400A2280B /* WXPlayer.bundle in Resources */,
 				BC4D32561DE9311300A2280B /* HotCell.xib in Resources */,
 				BC39E3801DE8432F00DF06AE /* channel_rank_subscript_one@3x.png in Resources */,
@@ -1097,6 +1106,7 @@
 				BC39E3571DE8432F00DF06AE /* app_bottom_tab_user@2x.png in Resources */,
 				BC39E36E1DE8432F00DF06AE /* app_nav_local_normal@3x.png in Resources */,
 				BC39E3641DE8432F00DF06AE /* app_nav_back_normal@3x.png in Resources */,
+				BC0651B41DEE83E0007D9B71 /* OtherTableViewCell.xib in Resources */,
 				BC39E35A1DE8432F00DF06AE /* app_bottom_tab_user_clicked@3x.png in Resources */,
 				BC39E2A71DE840A500DF06AE /* Main.storyboard in Resources */,
 				BC39E3661DE8432F00DF06AE /* app_nav_delete_normal@3x.png in Resources */,
@@ -1189,19 +1199,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4D32591DE9311E00A2280B /* LoginViewController.swift in Sources */,
-				BC4D323F1DE930F900A2280B /* OtherTableViewCell.swift in Sources */,
 				BC4D327D1DE9313700A2280B /* VIPAllViewController.swift in Sources */,
 				BC39E2ED1DE842F300DF06AE /* kankan.xcdatamodeld in Sources */,
-				BC4D321A1DE930E600A2280B /* HistoryViewController.swift in Sources */,
 				BC4D32381DE930F900A2280B /* HeaderReusableView.swift in Sources */,
 				BC4D32871DE9313700A2280B /* VIPScienceViewController.swift in Sources */,
 				BC4D321D1DE930E600A2280B /* HomeDocuViewController.swift in Sources */,
 				BC39E2A41DE840A500DF06AE /* ViewController.swift in Sources */,
 				BC4D327C1DE9313700A2280B /* VIPActViewController.swift in Sources */,
 				BC4D322A1DE930F000A2280B /* HomeModel.swift in Sources */,
-				BC4D32651DE9312E00A2280B /* OtherReusableView.swift in Sources */,
+				BCF6E0B71DEEC7FD008AB4F0 /* RegisterView.swift in Sources */,
 				BC4D32061DE92F9400A2280B /* XLaunchMenu.swift in Sources */,
 				BC4D324C1DE9310400A2280B /* VideoViewController.swift in Sources */,
+				BC0652041DEEBF63007D9B71 /* RegisterViewController.swift in Sources */,
 				BC4D32271DE930E600A2280B /* HomeWuYeViewController.swift in Sources */,
 				BC4D321F1DE930E600A2280B /* HomeLoveViewController.swift in Sources */,
 				BC4D32231DE930E600A2280B /* HomeVarietyViewController.swift in Sources */,
@@ -1229,6 +1238,7 @@
 				BC4D327B1DE9313700A2280B /* DetailViewController.m in Sources */,
 				BC4D328B1DE9313700A2280B /* VIPTerrifyViewController.swift in Sources */,
 				BC4D32531DE9311300A2280B /* AlertCell.swift in Sources */,
+				BC0651AD1DEE83CE007D9B71 /* OtherReusableView.swift in Sources */,
 				BC4D323D1DE930F900A2280B /* NormalCell.swift in Sources */,
 				BC4D32201DE930E600A2280B /* HomeMovieViewController.swift in Sources */,
 				BC4D324E1DE9310C00A2280B /* HotModel.swift in Sources */,
@@ -1236,6 +1246,7 @@
 				BC4D32811DE9313700A2280B /* VIPFunnyViewController.swift in Sources */,
 				BC4D32831DE9313700A2280B /* VIPLoveViewController.swift in Sources */,
 				BC39E3AC1DE8436B00DF06AE /* HomeBaseViewController.swift in Sources */,
+				BC0651B31DEE83E0007D9B71 /* OtherTableViewCell.swift in Sources */,
 				BC4D32281DE930E600A2280B /* JumpViewController.swift in Sources */,
 				BC4D328D1DE9313700A2280B /* VIPWarViewController.swift in Sources */,
 				BC4D325A1DE9311E00A2280B /* MineViewController.swift in Sources */,
@@ -1259,6 +1270,7 @@
 				BC4D328A1DE9313700A2280B /* VIPSuspenseViewController.swift in Sources */,
 				BC4D32491DE9310400A2280B /* HotViewController.swift in Sources */,
 				BC4D32471DE9310400A2280B /* BeautyViewController.swift in Sources */,
+				BC0651B01DEE83D8007D9B71 /* HistoryViewController.swift in Sources */,
 				BC4D321B1DE930E600A2280B /* HomeAnimViewController.swift in Sources */,
 				BC39E3B01DE8436B00DF06AE /* VIPBaseViewController.swift in Sources */,
 				BC4D32891DE9313700A2280B /* VIPStoryViewController.swift in Sources */,

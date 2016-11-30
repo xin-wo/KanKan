@@ -46,6 +46,11 @@ class HistoryViewController: UIViewController,WXNavigationProtocol {
     var dataArray = [PlayerModel]()
     
     var isEditting: Bool = false
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,7 +129,7 @@ extension HistoryViewController: UICollectionViewDelegateFlowLayout, UICollectio
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: 20, left: 5, bottom: 0, right: 5)
+        return UIEdgeInsets(top: 10, left: 5, bottom: 0, right: 5)
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         if isEditting {
