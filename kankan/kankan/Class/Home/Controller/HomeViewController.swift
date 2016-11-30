@@ -40,14 +40,14 @@ class HomeViewController: UIViewController, WXNavigationProtocol {
         
         addBarButton(imageName: "app_logo", postion: .left, select: #selector(rightClick))
         addBarButton(imageName: "app_nav_local_normal", bgImageName: "app_nav_local_click", postion: .right, select: #selector(localClick))
-        addBarButton(imageName: "app_nav_history_normal", bgImageName: "app_nav_history_normal_click", postion: .right, select: #selector(historyClick))
+//        addBarButton(imageName: "app_nav_history_normal", bgImageName: "app_nav_history_normal_click", postion: .right, select: #selector(historyClick))
         addBottomImage()
         
-        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: screenWidth-210, height: 30))
+        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: screenWidth-150, height: 30))
         btn.backgroundColor = UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1)
         btn.setImage(UIImage(named: "app_nav_search_normal"), forState: .Normal)
         btn.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
-        btn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -(screenWidth-250), bottom: 0, right: 0)
+        btn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -(screenWidth-200), bottom: 0, right: 0)
         btn.addTarget(self, action: #selector(searchClick), forControlEvents: .TouchUpInside)
         
         let barButtonItem = UIBarButtonItem(customView: btn)
@@ -93,6 +93,7 @@ class HomeViewController: UIViewController, WXNavigationProtocol {
     func localClick() {
         
     }
+    /*
     func historyClick() {
         
         let vc = HistoryViewController()
@@ -100,6 +101,7 @@ class HomeViewController: UIViewController, WXNavigationProtocol {
         navigationController?.pushViewController(vc, animated: true)
         
     }
+     */
     func searchClick() {
         
     }

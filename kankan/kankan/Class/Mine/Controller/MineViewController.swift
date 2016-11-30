@@ -12,7 +12,7 @@ class MineViewController: UIViewController, WXNavigationProtocol {
 
     var tableView: UITableView!
     //所有cell的名称
-    var cellNames = ["开通看看会员", "播放记录", "追剧", "收藏", "购买记录", "扫一扫", "远程设备管理", "设置", "反馈"]
+    var cellNames = ["开通看看会员", "", "追剧", "收藏", "购买记录", "扫一扫", "远程设备管理", "设置", "反馈"]
     
     
     override func viewDidLoad() {
@@ -57,6 +57,14 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
             
             return cell
             
+        } else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("otherMine", forIndexPath: indexPath) as! OtherTableViewCell
+            cell.itemLabel.text = "播放记录"
+            cell.smallImage.image = UIImage(named: "app_nav_history_clicked")
+            
+            cell.accessoryType = .DisclosureIndicator
+            return cell
+            
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("otherMine", forIndexPath: indexPath) as! OtherTableViewCell
             cell.itemLabel.text = cellNames[indexPath.row-1]
@@ -73,7 +81,7 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 0 {
             return 80
         }
-        return 60
+        return 50
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -86,6 +94,11 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
             navigationController?.pushViewController(LVC, animated: true)
             
             
+        } else if indexPath.row == 2 {
+            let vc = HistoryViewController()
+            vc.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(vc, animated: true)
+
         }
     }
     

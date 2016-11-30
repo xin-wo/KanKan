@@ -342,7 +342,7 @@
 		BC4D31FD1DE92F9400A2280B /* XMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMacros.swift; sourceTree = "<group>"; };
 		BC4D31FE1DE92F9400A2280B /* XScNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XScNavBar.swift; sourceTree = "<group>"; };
 		BC4D31FF1DE92F9400A2280B /* XScNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XScNavViewController.swift; sourceTree = "<group>"; };
-		BC4D320B1DE930E600A2280B /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		BC4D320B1DE930E600A2280B /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../../Home/Controller/HistoryViewController.swift; sourceTree = "<group>"; };
 		BC4D320C1DE930E600A2280B /* HomeAnimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAnimViewController.swift; sourceTree = "<group>"; };
 		BC4D320D1DE930E600A2280B /* HomeChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeChildViewController.swift; sourceTree = "<group>"; };
 		BC4D320E1DE930E600A2280B /* HomeDocuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDocuViewController.swift; sourceTree = "<group>"; };
@@ -367,8 +367,8 @@
 		BC4D32311DE930F900A2280B /* HomeBaseReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeBaseReusableView.xib; sourceTree = "<group>"; };
 		BC4D32321DE930F900A2280B /* NormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalCell.swift; sourceTree = "<group>"; };
 		BC4D32331DE930F900A2280B /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
-		BC4D32341DE930F900A2280B /* OtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
-		BC4D32351DE930F900A2280B /* OtherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
+		BC4D32341DE930F900A2280B /* OtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherTableViewCell.swift; path = ../../Home/View/OtherTableViewCell.swift; sourceTree = "<group>"; };
+		BC4D32351DE930F900A2280B /* OtherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OtherTableViewCell.xib; path = ../../Home/View/OtherTableViewCell.xib; sourceTree = "<group>"; };
 		BC4D32411DE9310400A2280B /* BeautyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyViewController.swift; sourceTree = "<group>"; };
 		BC4D32421DE9310400A2280B /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		BC4D32431DE9310400A2280B /* HotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotViewController.swift; sourceTree = "<group>"; };
@@ -386,8 +386,8 @@
 		BC4D325C1DE9312E00A2280B /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BC4D325D1DE9312E00A2280B /* MineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		BC4D325E1DE9312E00A2280B /* MineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
-		BC4D325F1DE9312E00A2280B /* OtherReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherReusableView.swift; sourceTree = "<group>"; };
-		BC4D32601DE9312E00A2280B /* OtherReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherReusableView.xib; sourceTree = "<group>"; };
+		BC4D325F1DE9312E00A2280B /* OtherReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherReusableView.swift; path = ../../Mine/View/OtherReusableView.swift; sourceTree = "<group>"; };
+		BC4D32601DE9312E00A2280B /* OtherReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OtherReusableView.xib; path = ../../Mine/View/OtherReusableView.xib; sourceTree = "<group>"; };
 		BC4D32671DE9313700A2280B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		BC4D32681DE9313700A2280B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		BC4D32691DE9313700A2280B /* VIPActViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPActViewController.swift; sourceTree = "<group>"; };
@@ -567,7 +567,6 @@
 			isa = PBXGroup;
 			children = (
 				BC4D32151DE930E600A2280B /* HomeViewController.swift */,
-				BC4D320B1DE930E600A2280B /* HistoryViewController.swift */,
 				BC4D320C1DE930E600A2280B /* HomeAnimViewController.swift */,
 				BC4D320D1DE930E600A2280B /* HomeChildViewController.swift */,
 				BC4D320E1DE930E600A2280B /* HomeDocuViewController.swift */,
@@ -605,8 +604,8 @@
 				BC4D32311DE930F900A2280B /* HomeBaseReusableView.xib */,
 				BC4D32321DE930F900A2280B /* NormalCell.swift */,
 				BC4D32331DE930F900A2280B /* NormalCell.xib */,
-				BC4D32341DE930F900A2280B /* OtherTableViewCell.swift */,
-				BC4D32351DE930F900A2280B /* OtherTableViewCell.xib */,
+				BC4D325F1DE9312E00A2280B /* OtherReusableView.swift */,
+				BC4D32601DE9312E00A2280B /* OtherReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -666,6 +665,7 @@
 		BC39E2DE1DE8424400DF06AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BC4D320B1DE930E600A2280B /* HistoryViewController.swift */,
 				BC4D32571DE9311E00A2280B /* LoginViewController.swift */,
 				BC4D32581DE9311E00A2280B /* MineViewController.swift */,
 			);
@@ -682,12 +682,12 @@
 		BC39E2E01DE8424400DF06AE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BC4D32341DE930F900A2280B /* OtherTableViewCell.swift */,
+				BC4D32351DE930F900A2280B /* OtherTableViewCell.xib */,
 				BC4D325B1DE9312E00A2280B /* LoginView.swift */,
 				BC4D325C1DE9312E00A2280B /* LoginView.xib */,
 				BC4D325D1DE9312E00A2280B /* MineTableViewCell.swift */,
 				BC4D325E1DE9312E00A2280B /* MineTableViewCell.xib */,
-				BC4D325F1DE9312E00A2280B /* OtherReusableView.swift */,
-				BC4D32601DE9312E00A2280B /* OtherReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
