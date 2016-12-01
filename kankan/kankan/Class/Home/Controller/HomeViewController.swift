@@ -32,7 +32,7 @@ class HomeViewController: UIViewController, WXNavigationProtocol {
         
 
     }
-    
+    //导航栏视图
     func configNavigationBar() {
         self.automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = UIColor.whiteColor()
