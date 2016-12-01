@@ -9,6 +9,8 @@
 import UIKit
 import MobileCoreServices
 
+
+
 //登录视图控制器
 class SigninViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate, WXNavigationProtocol {
     
@@ -19,6 +21,12 @@ class SigninViewController: UIViewController, UIImagePickerControllerDelegate,UI
         congfigUI()
        
     }
+    func showAlert(msg: String) {
+        let alert = UIAlertController(title: "温馨提醒", message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "确定", style: .Default, handler: nil)
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     func congfigUI() {
         self.view.backgroundColor = UIColor.whiteColor()
         signinView = NSBundle.mainBundle().loadNibNamed("RegisterView", owner: nil, options: nil).last as! RegisterView
@@ -26,18 +34,23 @@ class SigninViewController: UIViewController, UIImagePickerControllerDelegate,UI
         
         signinView.closure = { [unowned self] (name, password) in
             if name == "" || password == "" {
-                let alert = UIAlertController(title: "温馨提醒", message: "用户名或密码不能为空", preferredStyle: .Alert)
-                let action = UIAlertAction(title: "确定", style: .Default, handler: nil)
-                alert.addAction(action)
-                self.presentViewController(alert, animated: true, completion: nil)
+                self.showAlert("用户名或密码不能为空")
             } else {
-                print("注册成功！")
-                let mineVC = MineViewController()
-                mineVC.desText = "您尚未开通看看会员"
-                mineVC.titleText = name
-                mineVC.userImage = self.signinView.userImage.image
-                self.navigationController?.pushViewController(mineVC, animated: true)
-                
+               
+                let error = EMClient.sharedClient().registerWithUsername(self.signinView.userNameField.text, password: self.signinView.passwordField.text)
+                if error != nil {
+                    self.showAlert(error.errorDescription)
+                } else {
+//                    self.showAlert("注册成功")
+            
+                    let mineVC = MineViewController()
+                    mineVC.hasLogin = true
+                    mineVC.desText = "您尚未开通看看会员"
+                    mineVC.titleText = name
+                    mineVC.userImage = self.signinView.userImage.image
+                    self.navigationController?.pushViewController(mineVC, animated: true)
+                }
+
             }
             
         }

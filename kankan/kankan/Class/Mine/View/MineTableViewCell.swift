@@ -17,6 +17,7 @@ class MineTableViewCell: UITableViewCell {
     @IBOutlet weak var userImage: UIImageView!
     
     
+    @IBOutlet weak var modifyLabel: UILabel!
     
     
     

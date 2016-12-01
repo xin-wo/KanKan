@@ -17,14 +17,16 @@ class MineViewController: UIViewController, WXNavigationProtocol {
     var titleText = "点击登录"
     var userImage = UIImage(named: "default_poster_250_350")
     
+    var hasLogin = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configUI()
     
-    
     }
+   
     func configUI() {
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = UIColor.whiteColor()
@@ -94,10 +96,19 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         if indexPath.row == 0 {
-           
-            let LVC = PassViewController()
-            LVC.hidesBottomBarWhenPushed = true
-            navigationController?.pushViewController(LVC, animated: true)
+            if hasLogin {
+                let AVC = AccountViewController()
+                AVC.desText = self.desText
+                AVC.titleText = self.titleText
+                AVC.userImage = self.userImage
+                AVC.hidesBottomBarWhenPushed = true
+                navigationController?.pushViewController(AVC, animated: true)
+                
+            } else {
+                let LVC = PassViewController()
+                LVC.hidesBottomBarWhenPushed = true
+                navigationController?.pushViewController(LVC, animated: true)
+            }
             
         } else if indexPath.row == 2 {
             let vc = HistoryViewController()

@@ -8,4 +8,5 @@ target 'kankan' do
     pod 'SnapKit', '~> 0.15.0'
     pod 'MJRefresh'
     pod 'Masonry'
+    pod 'HyphenateLite_CN'
 end

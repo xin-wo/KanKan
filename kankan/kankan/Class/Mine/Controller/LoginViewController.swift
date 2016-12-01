@@ -18,6 +18,12 @@ class PassViewController: UIViewController, WXNavigationProtocol {
         configUI()
        
     }
+    func showAlert(msg: String) {
+        let alert = UIAlertController(title: "温馨提醒", message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "确定", style: .Default, handler: nil)
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     func configUI() {
         self.view.backgroundColor = UIColor.whiteColor()
         faceView = NSBundle.mainBundle().loadNibNamed("LoginView", owner: nil, options: nil).last as! LoginView
@@ -29,11 +35,22 @@ class PassViewController: UIViewController, WXNavigationProtocol {
                 alert.addAction(action)
                 self.presentViewController(alert, animated: true, completion: nil)
             } else {
-                
+                let error = EMClient.sharedClient().loginWithUsername(self.faceView.userNameField.text, password: self.faceView.passwordField.text)
+                if error != nil {
+                    self.showAlert(error.errorDescription)
+                } else {
+//               EMClient.sharedClient().options.isAutoLogin = true
+                   
+                    let mineVC = MineViewController()
+                    mineVC.hasLogin = true
+                    mineVC.desText = "您尚未开通看看会员"
+                    mineVC.titleText = name
+//                    mineVC.userImage = self.faceView.userImage.image
+                    self.navigationController?.pushViewController(mineVC, animated: true)
+                }
                 
             }
 
-            
         }
         
         self.view.addSubview(faceView)

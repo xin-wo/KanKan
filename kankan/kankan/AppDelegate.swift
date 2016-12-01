@@ -10,13 +10,17 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, EMClientDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let options = EMOptions(appkey: "1140161128115425#1607chat")
+        EMClient.sharedClient().initializeSDKWithOptions(options)
+        EMClient.sharedClient().addDelegate(self, delegateQueue: nil)
         
+
         createRoot()
         print(NSHomeDirectory())
         
@@ -132,5 +136,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+extension AppDelegate {
+    //自动登录的回调
+    func autoLoginDidCompleteWithError(aError: EMError!) {
+        if aError == nil {
+            
+        }
+    }
+   
 }
 

@@ -7,3 +7,4 @@
 #import "WXPlayer.h"
 #import <Masonry/Masonry.h>
 #import "DetailViewController.h"
+#import "EMSDK.h"
