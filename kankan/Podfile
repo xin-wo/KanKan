@@ -3,10 +3,10 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'kankan' do
-    pod 'Alamofire'
+    pod 'Alamofire', '~> 3.5.0'
     pod 'Kingfisher', '~> 2.0'
     pod 'SnapKit', '~> 0.15.0'
-    pod 'MJRefresh'
-    pod 'Masonry'
-    pod 'HyphenateLite_CN'
+    pod 'MJRefresh', '~> 3.1.12'
+    pod 'Masonry', '~> 1.0.2'
+    pod 'HyphenateLite_CN', '~> 3.2.1'
 end
